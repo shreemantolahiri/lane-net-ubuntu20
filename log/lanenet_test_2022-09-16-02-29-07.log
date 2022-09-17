@@ -1,0 +1,4 @@
+2022-09-16T02:29:07.615407+0530 INFO Start reading image and preprocessing
+2022-09-16T02:29:07.658415+0530 INFO Image load complete, cost time: 0.04262s
+2022-09-16T02:30:20.782542+0530 INFO Single imgae inference cost time: 0.14118s
+2022-09-16T02:30:20.858160+0530 INFO Model have fitted 0 lanes
