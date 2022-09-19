@@ -1,0 +1,45 @@
+I ran into the same issue I think (I had the same error message trying to launch RStudio after upgrading Ubuntu from 18.04 to 20.04). Here is what worked for me after reading the following page: https://packages.ubuntu.com/xenial/amd64/libssl1.0.0/download
+
+Edit the source list sudo nano /etc/apt/sources.list to add the following line: deb http://security.ubuntu.com/ubuntu xenial-security main
+Then sudo apt update and sudo apt install libssl1.0.0.
+I hope t works for you too.
+
+https://askubuntu.com/questions/1261614/ubuntu-20-04-libssl-so-1-0-0-cannot-open-shared-object-file-no-such-file-or-d
+
+
+lane coords
+https://github.com/MaybeShewill-CV/lanenet-lane-detection/issues/477
+
+
+downgraded tf from 2.6.2 to 1.14
+
+changed keepdims as keep_dims
+
+command:
+python3 tools/test_lanenet.py --weights_path weights/tusimple_lanenet.ckpt 
+--image_path ./data/tusimple_test_image/0.jpg 
+
+
+python3 tools/test_lanenet.py --weights_path weights/tusimple_lanenet.ckpt --image_path ./data/tusimple_test_image/0.jpg --save_dir /output
+
+
+Jetson TX2 lannenet
+https://github.com/MaybeShewill-CV/lanenet-lane-detection/issues/263
+
+ubuntu 18
+https://github.com/MaybeShewill-CV/lanenet-lane-detection/issues/340
+
+lane coordinates
+https://github.com/MaybeShewill-CV/lanenet-lane-detection/issues/477
+
+export QT_PLUGIN_PATH=/usr/lib/x86_64-linux-gnu/qtcreator/plugins
+
+https://github.com/Yuliang-Liu/Curve-Text-Detector/issues/11
+
+
+I resolved this error by downgrading from opencv-python 4.5.1.48 to opencv-python 4.3.0.36 with PyQt5 5.15.2 installed.
+
+
+
+
+
